@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Second_Sexiest_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdD-XP-F8P">
+                                <rect key="frame" x="71" y="532" width="250" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="53H-VL-e41"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign in with Google" cornerStyle="medium">
+                                    <backgroundConfiguration key="background" image="Google" imageContentMode="scaleAspectFill"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1y-Sb-N3C">
+                                <rect key="frame" x="71" y="589" width="250" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="hIN-FW-D6h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuQ-Xu-wJH">
+                                <rect key="frame" x="71" y="678" width="250" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ofh-R4-cay"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign in with Email" cornerStyle="medium">
+                                    <backgroundConfiguration key="background" image="Email"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goofy App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03d-UW-sTQ">
+                                <rect key="frame" x="57" y="167" width="269" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log Into Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3i2-di-Ole">
+                                <rect key="frame" x="101" y="289" width="190" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="NIt-Fm-GUM">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MuQ-Xu-wJH" firstAttribute="top" secondItem="w1y-Sb-N3C" secondAttribute="bottom" constant="20" id="Otc-25-v1u"/>
+                            <constraint firstItem="KdD-XP-F8P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RNW-mb-C4v"/>
+                            <constraint firstAttribute="bottom" secondItem="NIt-Fm-GUM" secondAttribute="bottom" id="UVH-oX-evG"/>
+                            <constraint firstItem="NIt-Fm-GUM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aex-K4-6Fq"/>
+                            <constraint firstItem="NIt-Fm-GUM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fVa-lJ-kYm"/>
+                            <constraint firstItem="w1y-Sb-N3C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="roB-Oi-UEQ"/>
+                            <constraint firstItem="MuQ-Xu-wJH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sNx-p6-ojT"/>
+                            <constraint firstAttribute="trailing" secondItem="NIt-Fm-GUM" secondAttribute="trailing" id="wCM-dF-I8l"/>
+                            <constraint firstItem="KdD-XP-F8P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xT4-pB-4Lu"/>
+                            <constraint firstItem="w1y-Sb-N3C" firstAttribute="top" secondItem="KdD-XP-F8P" secondAttribute="bottom" constant="20" id="zXs-Nc-8rQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
